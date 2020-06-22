@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Context from './pages/Context'
+import Hoc from './pages/Hoc'
+import Dialog from './pages/Dialog'
+import State from './pages/State'
+import Lifecycle from './pages/Lifecycle'
+import PureComponentPage from './pages/PureComponent'
+import RefsPage from './pages/Refs'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        {/* <Context />
+        <Hoc />
+        <Dialog />
+        <State />
+        <Lifecycle />
+        <PureComponentPage /> */}
+
+        <RefsPage />
+      </div>
+    )
+  }
 }
-
-export default App;
